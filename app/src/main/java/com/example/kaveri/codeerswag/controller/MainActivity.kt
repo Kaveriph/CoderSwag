@@ -23,5 +23,6 @@ class MainActivity : AppCompatActivity() {
     fun initialise() {
         adapter = CategoryAdapter(this, DataService.categories)
         categoriesList.adapter = adapter
+
     }
 }

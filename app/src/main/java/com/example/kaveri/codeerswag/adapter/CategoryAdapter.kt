@@ -24,11 +24,9 @@ class CategoryAdapter(val context : Context,val categories:List<Category>) : Bas
             viewHolder.categoryImage = categoryView.findViewById(R.id.categoryimage)
             viewHolder.categoryName = categoryView.findViewById(R.id.categoryNameTxt)
             categoryView.tag = viewHolder
-            Log.d("CategoryAdapter","Creating")
         } else {
             viewHolder = convertView.tag as ViewHolder
             categoryView = convertView
-            Log.d("CategoryAdapter","Reusing")
         }
         val category = categories[position]
         viewHolder.categoryName?.text = category.title
