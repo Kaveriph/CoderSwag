@@ -1,7 +1,8 @@
-package com.example.kaveri.codeerswag
+package com.example.kaveri.codeerswag.controller
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.kaveri.codeerswag.R
 
 class MainActivity : AppCompatActivity() {
 
