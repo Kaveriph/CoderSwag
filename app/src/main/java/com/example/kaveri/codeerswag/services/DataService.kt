@@ -35,4 +35,23 @@ object DataService {
             Product("Devslpoes Shirt red","25$","shirt4"),
             Product("Devslpoes Shirt blue","20$","shirt5")
     )
+
+    fun getProducts(category: String?): List<Product> {
+        /*if(category?.equals(categories[0].title)!!) {
+            return shirts
+        } else if(category?.equals(categories[1].title)!!) {
+            return hoodies
+        } else if(category?.equals(categories[2].title)!!) {
+            return hats
+        } else
+            return listOf<Product>()
+*/
+        return when(category) {
+            categories[0].title ->  shirts
+            categories[1].title ->  hoodies
+            categories[2].title ->  hats
+            else -> listOf<Product>()
+        }
+
+    }
 }
